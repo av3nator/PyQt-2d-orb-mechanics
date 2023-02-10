@@ -53,5 +53,5 @@ RUN apt-get update && apt-get install -y \
 # Install Python 3, PyQt5
 RUN apt-get update && apt-get install -y python3-pyqt5
 
-COPY mnelab /tmp/src
+COPY src /tmp/src
 RUN pip install -r /tmp/src/requirements.txt
