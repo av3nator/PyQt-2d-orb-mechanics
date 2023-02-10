@@ -54,9 +54,4 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && apt-get install -y python3-pyqt5
 
 COPY mnelab /tmp/mnelab
-RUN pip install -r /tmp/mnelab/requirements.txt
-
-#FROM python:3-onbuild
-#COPY .. .
-#RUN export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-#CMD ["python", "mnelab/__main__.py"]
+RUN pip install -r /tmp/src/requirements.txt
